@@ -1,0 +1,168 @@
+/* 1. Cấu hình chung cho Body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: #f4f4f9;
+    color: #222222;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* 2. Skip Link cho Accessibility */
+.skip-link {
+    position: absolute;
+    top: -999px;
+    left: 10px;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 12px 18px;
+    font-weight: bold;
+    text-decoration: underline;
+    z-index: 1000;
+}
+
+.skip-link:focus {
+    top: 10px;
+}
+
+/* 3. Header & Thanh Navigation */
+header {
+    background-color: #1a252f;
+    padding: 15px 30px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+nav {
+    background-color: #1a252f;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+li {
+    display: inline-block;
+    width: auto;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #0056b3;
+    color: #ffffff;
+}
+
+.nav-links a.active {
+    background-color: #0056b3;
+}
+
+/* 4. Thẻ Main & Văn bản */
+main {
+    background-color: #ffffff;
+    font-size: 1.1rem;
+    padding: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    min-height: 400px;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Georgia', Times, serif;
+    color: #1a252f;
+}
+
+p {
+    line-height: 1.6;
+    color: #222222;
+}
+
+/* 5. Khung Gallery Tương tác (#image) */
+#image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 320px;
+    border: 3px dashed #1a252f;
+    background-color: #e2e8f0;
+    color: #ffffff;
+    text-shadow: 1px 1px 4px #000000, 0px 0px 8px #000000;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 20px 0;
+    border-radius: 8px;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: background-image 0.2s ease-in-out;
+}
+
+/* 6. Layout Grid & Card sản phẩm */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+img.preview {
+    border: 3px solid #333333;
+    padding: 6px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+img.preview:hover, img.preview:focus {
+    transform: scale(1.02);
+    border-color: #0056b3;
+    outline: none;
+}
+
+/* 7. Footer */
+footer {
+    background-color: #1a252f;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}

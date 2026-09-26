@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Universe - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="gallery.js" defer></script>
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to Main Content</a>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">🎬 Movie Hub</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <h1>Welcome to Movie Universe</h1>
+        <p>Explore cinematic masterpieces, posters, and behind-the-scenes insights.</p>
+        
+        <!-- Khung hiển thị gallery lớn -->
+        <div id="image">
+            Hover over an image below to display here.
+        </div>
+
+        <!-- Danh sách thẻ ảnh -->
+        <section class="grid-container">
+            <div class="card">
+                <h2>Featured Movie</h2>
+                <img class="preview" 
+                     tabindex="0"
+                     src="https://picsum.photos/id/10/500/300" 
+                     alt="Scenic landscape representing open world film"
+                     onmouseover="upDate(this)" 
+                     onmouseout="unDo()"
+                     onfocus="upDate(this)"
+                     onblur="unDo()">
+                <p>Discover breathtaking visuals and deep storytelling in modern cinema.</p>
+            </div>
+            <div class="card">
+                <h2>Director's Cut</h2>
+                <img class="preview" 
+                     tabindex="0"
+                     src="https://picsum.photos/id/20/500/300" 
+                     alt="Notebook and coffee representing scriptwriting"
+                     onmouseover="upDate(this)" 
+                     onmouseout="unDo()"
+                     onfocus="upDate(this)"
+                     onblur="unDo()">
+                <p>Learn about the art of screenwriting and visual storytelling techniques.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Movie Universe. Built for Web Design Course.</p>
+    </footer>
+</body>
+</html>
