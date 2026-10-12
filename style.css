@@ -1,4 +1,4 @@
-/* 1. Cấu hình chung cho Body */
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
@@ -9,7 +9,6 @@ body {
     line-height: 1.6;
 }
 
-/* 2. Skip Link cho Accessibility */
 .skip-link {
     position: absolute;
     top: -999px;
@@ -26,7 +25,6 @@ body {
     top: 10px;
 }
 
-/* 3. Header & Thanh Navigation */
 header {
     background-color: #1a252f;
     padding: 15px 30px;
@@ -80,7 +78,7 @@ li {
     background-color: #0056b3;
 }
 
-/* 4. Thẻ Main & Văn bản */
+
 main {
     background-color: #ffffff;
     font-size: 1.1rem;
@@ -101,7 +99,6 @@ p {
     color: #222222;
 }
 
-/* 5. Khung Gallery Tương tác (#image) */
 #image {
     display: flex;
     align-items: center;
@@ -124,7 +121,6 @@ p {
     transition: background-image 0.2s ease-in-out;
 }
 
-/* 6. Layout Grid & Card sản phẩm */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -158,11 +154,26 @@ img.preview:hover, img.preview:focus {
     outline: none;
 }
 
-/* 7. Footer */
+
 footer {
     background-color: #1a252f;
     color: #ffffff;
     text-align: center;
     padding: 15px;
     margin-top: 40px;
+}
+
+@media screen and (min-width: 772px) {
+    div {
+        display: inline-block;
+        width: 45%;
+    }
+    img {
+        max-height: 30vh;
+    }
+}
+@media screen and (min-width: 998px) {
+    div {
+        width: 30%;
+    }
 }
